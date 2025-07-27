@@ -1,0 +1,11 @@
+name: Checks
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  gradle:
+    name: Gradle
+    permissions:
+      contents: read
